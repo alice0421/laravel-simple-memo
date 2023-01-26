@@ -25,3 +25,8 @@ Udemy講座の1つである「[【作って学ぶ】laravel8とMySQLで作るシ
 ### マイグレーション
 - マイグレーションはファイル作成順に実行される。そのため、外部キーが存在する際にはファイル作成の順番に注意。
   - 今回はusers->memos->tags->memo_tagsの順番。
+
+### ログイン機能
+- Laravel9においてLaravel UIは非推奨なため、代わりにLaravel Breezeをインストール。
+  - `php artisan breeze:install blade`にすると、bladeを用いたBreezeがインストールされる。
+  - 今回はdarkモードを適用させた（`php artisan breeze:install blade --dark`）。後からこのコマンドを打ってもdarkモードにできる。
